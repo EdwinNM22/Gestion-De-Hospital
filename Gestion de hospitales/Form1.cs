@@ -188,7 +188,7 @@ namespace Gestion_de_hospitales
 
         }
 
-       // hola mundooo
+       // HOLAAAAAAAAAAAAA
     }
 }
 

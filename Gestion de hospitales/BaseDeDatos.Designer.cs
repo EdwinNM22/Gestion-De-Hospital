@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             DataGridViewMain = new DataGridView();
             ColumnID = new DataGridViewTextBoxColumn();
             ColumnProducto = new DataGridViewTextBoxColumn();
@@ -50,7 +50,6 @@
             BoxCantidad = new TextBox();
             buttonAgregar = new Button();
             panel1 = new Panel();
-            BotonOrdenPorPrecio = new Button();
             panel5 = new Panel();
             label8 = new Label();
             TextBoxTotal = new TextBox();
@@ -62,10 +61,12 @@
             label6 = new Label();
             label7 = new Label();
             panel2 = new Panel();
+            BotonOrdenPorPrecio = new Button();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
             label10 = new Label();
             label9 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)DataGridViewMain).BeginInit();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
@@ -77,30 +78,31 @@
             // 
             DataGridViewMain.BackgroundColor = Color.FromArgb(36, 37, 38);
             DataGridViewMain.BorderStyle = BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(36, 37, 38);
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.ControlDark;
-            dataGridViewCellStyle1.SelectionForeColor = Color.RosyBrown;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            DataGridViewMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(36, 37, 38);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.ControlDark;
+            dataGridViewCellStyle3.SelectionForeColor = Color.RosyBrown;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            DataGridViewMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             DataGridViewMain.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DataGridViewMain.Columns.AddRange(new DataGridViewColumn[] { ColumnID, ColumnProducto, ColumnCantidadDeProducto, ColumnFormasDePago, ColumnPrecio, ColumnEmail, ColumnHistorialmedico });
             DataGridViewMain.Dock = DockStyle.Bottom;
             DataGridViewMain.EnableHeadersVisualStyles = false;
             DataGridViewMain.Location = new Point(0, 422);
             DataGridViewMain.Name = "DataGridViewMain";
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(36, 37, 38);
-            dataGridViewCellStyle2.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = SystemColors.Window;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.ControlDark;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            DataGridViewMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(36, 37, 38);
+            dataGridViewCellStyle4.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = SystemColors.Window;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.ControlDark;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            DataGridViewMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             DataGridViewMain.Size = new Size(1261, 289);
             DataGridViewMain.TabIndex = 0;
+            DataGridViewMain.CellContentClick += DataGridViewMain_CellContentClick;
             // 
             // ColumnID
             // 
@@ -252,6 +254,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(24, 25, 26);
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(panel5);
             panel1.Controls.Add(panel4);
             panel1.Controls.Add(panel2);
@@ -262,19 +265,6 @@
             panel1.Size = new Size(1261, 711);
             panel1.TabIndex = 12;
             panel1.Paint += panel1_Paint;
-            // 
-            // BotonOrdenPorPrecio
-            // 
-            BotonOrdenPorPrecio.FlatAppearance.BorderColor = Color.White;
-            BotonOrdenPorPrecio.FlatStyle = FlatStyle.Flat;
-            BotonOrdenPorPrecio.ForeColor = SystemColors.ControlLightLight;
-            BotonOrdenPorPrecio.Location = new Point(414, 177);
-            BotonOrdenPorPrecio.Name = "BotonOrdenPorPrecio";
-            BotonOrdenPorPrecio.Size = new Size(191, 60);
-            BotonOrdenPorPrecio.TabIndex = 20;
-            BotonOrdenPorPrecio.Text = "Orden por precio";
-            BotonOrdenPorPrecio.UseVisualStyleBackColor = true;
-            BotonOrdenPorPrecio.Click += BotonOrdenPorPrecio_Click;
             // 
             // panel5
             // 
@@ -414,6 +404,19 @@
             panel2.TabIndex = 16;
             panel2.Paint += panel2_Paint;
             // 
+            // BotonOrdenPorPrecio
+            // 
+            BotonOrdenPorPrecio.FlatAppearance.BorderColor = Color.White;
+            BotonOrdenPorPrecio.FlatStyle = FlatStyle.Flat;
+            BotonOrdenPorPrecio.ForeColor = SystemColors.ControlLightLight;
+            BotonOrdenPorPrecio.Location = new Point(414, 177);
+            BotonOrdenPorPrecio.Name = "BotonOrdenPorPrecio";
+            BotonOrdenPorPrecio.Size = new Size(191, 60);
+            BotonOrdenPorPrecio.TabIndex = 20;
+            BotonOrdenPorPrecio.Text = "Orden por precio";
+            BotonOrdenPorPrecio.UseVisualStyleBackColor = true;
+            BotonOrdenPorPrecio.Click += BotonOrdenPorPrecio_Click;
+            // 
             // textBox2
             // 
             textBox2.Location = new Point(414, 88);
@@ -447,6 +450,15 @@
             label9.Size = new Size(36, 15);
             label9.TabIndex = 12;
             label9.Text = "Email";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(301, 328);
+            button1.Name = "button1";
+            button1.Size = new Size(154, 55);
+            button1.TabIndex = 23;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // BaseDeDatos
             // 
@@ -506,5 +518,6 @@
         private TextBox textBox1;
         private Label label10;
         private Label label9;
+        private Button button1;
     }
 }

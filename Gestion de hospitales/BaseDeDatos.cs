@@ -300,5 +300,9 @@ namespace Gestion_de_hospitales
             TextBoxTotal.Text = total.ToString("N2");
         }
 
+        private void DataGridViewMain_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
