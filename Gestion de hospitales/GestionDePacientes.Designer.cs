@@ -1,6 +1,6 @@
 ﻿namespace Gestion_de_hospitales
 {
-    partial class BaseDeDatos
+    partial class GestionDePacientes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewMain = new DataGridView();
             ColumnID = new DataGridViewTextBoxColumn();
             ColumnProducto = new DataGridViewTextBoxColumn();
@@ -50,26 +50,19 @@
             BoxCantidad = new TextBox();
             buttonAgregar = new Button();
             panel1 = new Panel();
-            panel5 = new Panel();
-            label8 = new Label();
-            TextBoxTotal = new TextBox();
-            BotonCalcular = new Button();
             panel4 = new Panel();
             TextBoxBusqueda = new TextBox();
             ComboOrdenar = new ComboBox();
-            BotonOrdenAlfabetico = new Button();
             label6 = new Label();
             label7 = new Label();
             panel2 = new Panel();
-            BotonOrdenPorPrecio = new Button();
+            button1 = new Button();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
             label10 = new Label();
             label9 = new Label();
-            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)DataGridViewMain).BeginInit();
             panel1.SuspendLayout();
-            panel5.SuspendLayout();
             panel4.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -78,28 +71,28 @@
             // 
             DataGridViewMain.BackgroundColor = Color.FromArgb(36, 37, 38);
             DataGridViewMain.BorderStyle = BorderStyle.None;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(36, 37, 38);
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.ControlDark;
-            dataGridViewCellStyle3.SelectionForeColor = Color.RosyBrown;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            DataGridViewMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(36, 37, 38);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.ControlDark;
+            dataGridViewCellStyle1.SelectionForeColor = Color.RosyBrown;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            DataGridViewMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             DataGridViewMain.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DataGridViewMain.Columns.AddRange(new DataGridViewColumn[] { ColumnID, ColumnProducto, ColumnCantidadDeProducto, ColumnFormasDePago, ColumnPrecio, ColumnEmail, ColumnHistorialmedico });
             DataGridViewMain.Dock = DockStyle.Bottom;
             DataGridViewMain.EnableHeadersVisualStyles = false;
             DataGridViewMain.Location = new Point(0, 422);
             DataGridViewMain.Name = "DataGridViewMain";
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = Color.FromArgb(36, 37, 38);
-            dataGridViewCellStyle4.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle4.ForeColor = SystemColors.Window;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.ControlDark;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            DataGridViewMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(36, 37, 38);
+            dataGridViewCellStyle2.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.Window;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.ControlDark;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            DataGridViewMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             DataGridViewMain.Size = new Size(1261, 289);
             DataGridViewMain.TabIndex = 0;
             DataGridViewMain.CellContentClick += DataGridViewMain_CellContentClick;
@@ -254,8 +247,6 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(24, 25, 26);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(panel5);
             panel1.Controls.Add(panel4);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(DataGridViewMain);
@@ -266,61 +257,17 @@
             panel1.TabIndex = 12;
             panel1.Paint += panel1_Paint;
             // 
-            // panel5
-            // 
-            panel5.Anchor = AnchorStyles.None;
-            panel5.BackColor = Color.FromArgb(36, 37, 38);
-            panel5.Controls.Add(label8);
-            panel5.Controls.Add(TextBoxTotal);
-            panel5.Controls.Add(BotonCalcular);
-            panel5.Location = new Point(820, 268);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(390, 103);
-            panel5.TabIndex = 22;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.ForeColor = SystemColors.ControlLightLight;
-            label8.Location = new Point(194, 16);
-            label8.Name = "label8";
-            label8.Size = new Size(77, 15);
-            label8.TabIndex = 22;
-            label8.Text = "Total a pagar:";
-            // 
-            // TextBoxTotal
-            // 
-            TextBoxTotal.Location = new Point(194, 40);
-            TextBoxTotal.Name = "TextBoxTotal";
-            TextBoxTotal.Size = new Size(160, 23);
-            TextBoxTotal.TabIndex = 20;
-            // 
-            // BotonCalcular
-            // 
-            BotonCalcular.BackColor = Color.FromArgb(36, 37, 38);
-            BotonCalcular.FlatAppearance.BorderColor = Color.White;
-            BotonCalcular.FlatStyle = FlatStyle.Flat;
-            BotonCalcular.ForeColor = SystemColors.ControlLightLight;
-            BotonCalcular.Location = new Point(17, 23);
-            BotonCalcular.Name = "BotonCalcular";
-            BotonCalcular.Size = new Size(137, 57);
-            BotonCalcular.TabIndex = 21;
-            BotonCalcular.Text = "Calcular";
-            BotonCalcular.UseVisualStyleBackColor = false;
-            BotonCalcular.Click += BotonCalcular_Click;
-            // 
             // panel4
             // 
             panel4.Anchor = AnchorStyles.None;
             panel4.BackColor = Color.FromArgb(36, 37, 38);
             panel4.Controls.Add(TextBoxBusqueda);
             panel4.Controls.Add(ComboOrdenar);
-            panel4.Controls.Add(BotonOrdenAlfabetico);
             panel4.Controls.Add(label6);
             panel4.Controls.Add(label7);
-            panel4.Location = new Point(851, 28);
+            panel4.Location = new Point(733, 28);
             panel4.Name = "panel4";
-            panel4.Size = new Size(359, 169);
+            panel4.Size = new Size(359, 278);
             panel4.TabIndex = 18;
             // 
             // TextBoxBusqueda
@@ -341,19 +288,6 @@
             ComboOrdenar.TabIndex = 13;
             ComboOrdenar.Text = "Ordenar";
             ComboOrdenar.SelectedIndexChanged += ComboOrdenar_SelectedIndexChanged;
-            // 
-            // BotonOrdenAlfabetico
-            // 
-            BotonOrdenAlfabetico.FlatAppearance.BorderColor = Color.White;
-            BotonOrdenAlfabetico.FlatStyle = FlatStyle.Flat;
-            BotonOrdenAlfabetico.ForeColor = SystemColors.ControlLightLight;
-            BotonOrdenAlfabetico.Location = new Point(43, 174);
-            BotonOrdenAlfabetico.Name = "BotonOrdenAlfabetico";
-            BotonOrdenAlfabetico.Size = new Size(191, 60);
-            BotonOrdenAlfabetico.TabIndex = 19;
-            BotonOrdenAlfabetico.Text = "Orden Alfabetico";
-            BotonOrdenAlfabetico.UseVisualStyleBackColor = true;
-            BotonOrdenAlfabetico.Click += BotonOrdenAlfabetico_Click;
             // 
             // label6
             // 
@@ -381,7 +315,7 @@
             // 
             panel2.Anchor = AnchorStyles.None;
             panel2.BackColor = Color.FromArgb(36, 37, 38);
-            panel2.Controls.Add(BotonOrdenPorPrecio);
+            panel2.Controls.Add(button1);
             panel2.Controls.Add(textBox2);
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(label10);
@@ -404,18 +338,16 @@
             panel2.TabIndex = 16;
             panel2.Paint += panel2_Paint;
             // 
-            // BotonOrdenPorPrecio
+            // button1
             // 
-            BotonOrdenPorPrecio.FlatAppearance.BorderColor = Color.White;
-            BotonOrdenPorPrecio.FlatStyle = FlatStyle.Flat;
-            BotonOrdenPorPrecio.ForeColor = SystemColors.ControlLightLight;
-            BotonOrdenPorPrecio.Location = new Point(414, 177);
-            BotonOrdenPorPrecio.Name = "BotonOrdenPorPrecio";
-            BotonOrdenPorPrecio.Size = new Size(191, 60);
-            BotonOrdenPorPrecio.TabIndex = 20;
-            BotonOrdenPorPrecio.Text = "Orden por precio";
-            BotonOrdenPorPrecio.UseVisualStyleBackColor = true;
-            BotonOrdenPorPrecio.Click += BotonOrdenPorPrecio_Click;
+            button1.FlatAppearance.BorderColor = Color.White;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(414, 177);
+            button1.Name = "button1";
+            button1.Size = new Size(172, 57);
+            button1.TabIndex = 17;
+            button1.Text = "Eliminar";
+            button1.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
@@ -451,28 +383,17 @@
             label9.TabIndex = 12;
             label9.Text = "Email";
             // 
-            // button1
-            // 
-            button1.Location = new Point(301, 328);
-            button1.Name = "button1";
-            button1.Size = new Size(154, 55);
-            button1.TabIndex = 23;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // BaseDeDatos
+            // GestionDePacientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1261, 711);
             Controls.Add(panel1);
-            Name = "BaseDeDatos";
-            Text = "BaseDeDatos";
+            Name = "GestionDePacientes";
+            Text = "Gestion De Pacientes";
             Load += BaseDeDatos_Load;
             ((System.ComponentModel.ISupportInitialize)DataGridViewMain).EndInit();
             panel1.ResumeLayout(false);
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             panel2.ResumeLayout(false);
@@ -501,12 +422,6 @@
         private Label label6;
         private TextBox TextBoxBusqueda;
         private Label label7;
-        private Button BotonOrdenAlfabetico;
-        private Button BotonOrdenPorPrecio;
-        private TextBox TextBoxTotal;
-        private Button BotonCalcular;
-        private Panel panel5;
-        private Label label8;
         private DataGridViewTextBoxColumn ColumnID;
         private DataGridViewTextBoxColumn ColumnProducto;
         private DataGridViewTextBoxColumn ColumnCantidadDeProducto;

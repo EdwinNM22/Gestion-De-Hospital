@@ -31,10 +31,9 @@
             components = new System.ComponentModel.Container();
             contextMenuStrip1 = new ContextMenuStrip(components);
             PanelMenuLateral = new Panel();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
+            BotonFarmacia = new FontAwesome.Sharp.IconButton();
             AsistenciaMedica = new FontAwesome.Sharp.IconButton();
             BotonCerrarSesion = new FontAwesome.Sharp.IconButton();
-            BotonConfiguracion = new FontAwesome.Sharp.IconButton();
             BotonContactos = new FontAwesome.Sharp.IconButton();
             BotonBaseDeDatos = new FontAwesome.Sharp.IconButton();
             panel1 = new Panel();
@@ -61,10 +60,9 @@
             // PanelMenuLateral
             // 
             PanelMenuLateral.BackColor = Color.FromArgb(36, 37, 38);
-            PanelMenuLateral.Controls.Add(iconButton2);
+            PanelMenuLateral.Controls.Add(BotonFarmacia);
             PanelMenuLateral.Controls.Add(AsistenciaMedica);
             PanelMenuLateral.Controls.Add(BotonCerrarSesion);
-            PanelMenuLateral.Controls.Add(BotonConfiguracion);
             PanelMenuLateral.Controls.Add(BotonContactos);
             PanelMenuLateral.Controls.Add(BotonBaseDeDatos);
             PanelMenuLateral.Controls.Add(panel1);
@@ -74,26 +72,27 @@
             PanelMenuLateral.Size = new Size(220, 684);
             PanelMenuLateral.TabIndex = 14;
             // 
-            // iconButton2
+            // BotonFarmacia
             // 
-            iconButton2.Dock = DockStyle.Top;
-            iconButton2.FlatAppearance.BorderSize = 0;
-            iconButton2.FlatStyle = FlatStyle.Flat;
-            iconButton2.ForeColor = SystemColors.ControlLightLight;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Gear;
-            iconButton2.IconColor = Color.White;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton2.Location = new Point(0, 540);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Padding = new Padding(10, 0, 20, 0);
-            iconButton2.Size = new Size(220, 100);
-            iconButton2.TabIndex = 6;
-            iconButton2.Tag = "Configuración";
-            iconButton2.Text = "Historial Medico";
-            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton2.UseVisualStyleBackColor = true;
+            BotonFarmacia.Dock = DockStyle.Top;
+            BotonFarmacia.FlatAppearance.BorderSize = 0;
+            BotonFarmacia.FlatStyle = FlatStyle.Flat;
+            BotonFarmacia.ForeColor = SystemColors.ControlLightLight;
+            BotonFarmacia.IconChar = FontAwesome.Sharp.IconChar.PrescriptionBottleAlt;
+            BotonFarmacia.IconColor = Color.White;
+            BotonFarmacia.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            BotonFarmacia.ImageAlign = ContentAlignment.MiddleLeft;
+            BotonFarmacia.Location = new Point(0, 440);
+            BotonFarmacia.Name = "BotonFarmacia";
+            BotonFarmacia.Padding = new Padding(10, 0, 20, 0);
+            BotonFarmacia.Size = new Size(220, 100);
+            BotonFarmacia.TabIndex = 6;
+            BotonFarmacia.Tag = "Configuración";
+            BotonFarmacia.Text = "Farmacia";
+            BotonFarmacia.TextAlign = ContentAlignment.MiddleLeft;
+            BotonFarmacia.TextImageRelation = TextImageRelation.ImageBeforeText;
+            BotonFarmacia.UseVisualStyleBackColor = true;
+            BotonFarmacia.Click += BotonFarmacia_Click;
             // 
             // AsistenciaMedica
             // 
@@ -101,11 +100,11 @@
             AsistenciaMedica.FlatAppearance.BorderSize = 0;
             AsistenciaMedica.FlatStyle = FlatStyle.Flat;
             AsistenciaMedica.ForeColor = SystemColors.ControlLightLight;
-            AsistenciaMedica.IconChar = FontAwesome.Sharp.IconChar.Gear;
+            AsistenciaMedica.IconChar = FontAwesome.Sharp.IconChar.Robot;
             AsistenciaMedica.IconColor = Color.White;
             AsistenciaMedica.IconFont = FontAwesome.Sharp.IconFont.Auto;
             AsistenciaMedica.ImageAlign = ContentAlignment.MiddleLeft;
-            AsistenciaMedica.Location = new Point(0, 440);
+            AsistenciaMedica.Location = new Point(0, 340);
             AsistenciaMedica.Name = "AsistenciaMedica";
             AsistenciaMedica.Padding = new Padding(10, 0, 20, 0);
             AsistenciaMedica.Size = new Size(220, 100);
@@ -138,28 +137,6 @@
             BotonCerrarSesion.TextImageRelation = TextImageRelation.ImageBeforeText;
             BotonCerrarSesion.UseVisualStyleBackColor = true;
             BotonCerrarSesion.Click += BotonCerrarSesion_Click_1;
-            // 
-            // BotonConfiguracion
-            // 
-            BotonConfiguracion.Dock = DockStyle.Top;
-            BotonConfiguracion.FlatAppearance.BorderSize = 0;
-            BotonConfiguracion.FlatStyle = FlatStyle.Flat;
-            BotonConfiguracion.ForeColor = SystemColors.ControlLightLight;
-            BotonConfiguracion.IconChar = FontAwesome.Sharp.IconChar.Gear;
-            BotonConfiguracion.IconColor = Color.White;
-            BotonConfiguracion.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            BotonConfiguracion.ImageAlign = ContentAlignment.MiddleLeft;
-            BotonConfiguracion.Location = new Point(0, 340);
-            BotonConfiguracion.Name = "BotonConfiguracion";
-            BotonConfiguracion.Padding = new Padding(10, 0, 20, 0);
-            BotonConfiguracion.Size = new Size(220, 100);
-            BotonConfiguracion.TabIndex = 3;
-            BotonConfiguracion.Tag = "Configuración";
-            BotonConfiguracion.Text = "Historial medico";
-            BotonConfiguracion.TextAlign = ContentAlignment.MiddleLeft;
-            BotonConfiguracion.TextImageRelation = TextImageRelation.ImageBeforeText;
-            BotonConfiguracion.UseVisualStyleBackColor = true;
-            BotonConfiguracion.Click += BotonCerrarSesion_Click;
             // 
             // BotonContactos
             // 
@@ -281,6 +258,7 @@
             MainPanel.Name = "MainPanel";
             MainPanel.Size = new Size(1036, 584);
             MainPanel.TabIndex = 16;
+            MainPanel.Paint += MainPanel_Paint;
             // 
             // labelFecha
             // 
@@ -338,7 +316,6 @@
         private ContextMenuStrip contextMenuStrip1;
         private Panel PanelMenuLateral;
         private Panel panel1;
-        private FontAwesome.Sharp.IconButton BotonConfiguracion;
         private FontAwesome.Sharp.IconButton BotonContactos;
         private FontAwesome.Sharp.IconButton BotonBaseDeDatos;
         private FontAwesome.Sharp.IconButton BotonCerrarSesion;
@@ -351,6 +328,6 @@
         private Label labelHora;
         private System.Windows.Forms.Timer HoraFecha;
         private FontAwesome.Sharp.IconButton AsistenciaMedica;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton BotonFarmacia;
     }
 }

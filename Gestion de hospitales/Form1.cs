@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
+using Prueba_De_DataGridView;
 namespace Gestion_de_hospitales
 {
     public partial class Form1 : Form
@@ -88,24 +89,18 @@ namespace Gestion_de_hospitales
 
         private void BotonBaseDeDatos_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender, RGBColors.color6);
-            Formularios_Secundarios(new BaseDeDatos());
+            ActiveButton(sender, RGBColors.color4);
+            Formularios_Secundarios(new GestionDePacientes());
         }
 
         private void BotonConfiguracion_Click(object sender, EventArgs e)
         {
             //Contactos
-            ActiveButton(sender, RGBColors.color4);
+            ActiveButton(sender, RGBColors.color1);
             Formularios_Secundarios(new CitasMedicas());
 
         }
 
-        private void BotonCerrarSesion_Click(object sender, EventArgs e)
-        {
-            //Configuracion
-            ActiveButton(sender, RGBColors.color3);
-            Formularios_Secundarios(new HistorialMedico());
-        }
 
         private void BotonCerrarSesion_Click_1(object sender, EventArgs e)
         {
@@ -116,8 +111,14 @@ namespace Gestion_de_hospitales
         private void AsistenciaMedica_Click(object sender, EventArgs e)
         {
             Formularios_Secundarios(new Asistencia());
+            ActiveButton(sender, RGBColors.color5);
         }
 
+        private void BotonFarmacia_Click(object sender, EventArgs e)
+        {
+            Formularios_Secundarios(new Farmacia());
+            ActiveButton(sender, RGBColors.color6);
+        }
         private void BotonLogo_Click(object sender, EventArgs e)
         {
             Reset();
@@ -132,7 +133,7 @@ namespace Gestion_de_hospitales
             Titulo.Text = "Home";
         }
 
-        // Arrastrar ventana con mouse incompleto
+        // Arrastrar ventana con mouse (incompleto)
         private void PanelSuperior_MouseDown(object sender, MouseEventArgs e)
         {
 
@@ -144,7 +145,7 @@ namespace Gestion_de_hospitales
         private void Formularios_Secundarios(Form FormularioSecundario)
         {
             if (FormSecundario != null)
-            {
+            {   //solo se mantiene un formulario abierto
                 FormSecundario.Close();
             }
             FormSecundario = FormularioSecundario;
@@ -188,7 +189,10 @@ namespace Gestion_de_hospitales
 
         }
 
-       // HOLAAAAAAAAAAAAA
+        private void MainPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

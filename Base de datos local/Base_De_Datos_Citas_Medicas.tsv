@@ -1,0 +1,101 @@
+ID de cita	Nombre	Nombre de paciente	Fecha de cita	Hora de cita	Motivo de cita	Doctor a cargo
+1	Juan Pérez	2024-01-05	09:00	Revisión de Gripe	Dr. José Martínez
+2	María López	2024-01-10	10:00	Consulta para Dolor de cabeza	Dr. Ana Rodríguez
+3	Carlos Gómez	2024-01-15	11:00	Tratamiento para Fractura	Dr. Luis Fernández
+4	Ana Martínez	2024-01-20	14:00	Chequeo de Gripe	Dr. Carmen González
+5	Luis Fernández	2024-01-25	15:00	Evaluación de Dolor de cabeza	Dr. Juan Pérez
+6	Sofía Rodríguez	2024-02-01	09:30	Control de Fractura	Dr. Javier Ramírez
+7	Fernando Pérez	2024-02-05	10:30	Seguimiento de Gripe	Dr. Valeria Morales
+8	Gabriela González	2024-02-10	11:30	Revisión para Dolor de cabeza	Dr. Ricardo López
+9	Ricardo López	2024-02-15	14:30	Tratamiento de Fractura	Dr. Cristina Hernández
+10	Laura Fernández	2024-02-20	15:30	Consulta para Gripe	Dr. Manuel Ruiz
+11	Alejandro García	2024-03-01	09:00	Chequeo para Dolor de cabeza	Dr. Sofía Rodríguez
+12	Valeria Morales	2024-03-05	10:00	Evaluación de Fractura	Dr. Fernando Pérez
+13	Javier Ramírez	2024-03-10	11:00	Control de Gripe	Dr. Gabriela González
+14	Cristina Hernández	2024-03-15	14:00	Seguimiento de Dolor de cabeza	Dr. Ricardo López
+15	Manuel Ruiz	2024-03-20	15:00	Revisión de Fractura	Dr. Laura Fernández
+16	Laura González	2024-04-01	09:30	Tratamiento de Gripe	Dr. Alejandro García
+17	Fernando Martínez	2024-04-05	10:30	Consulta para Dolor de cabeza	Dr. Valeria Morales
+18	Gabriela Torres	2024-04-10	11:30	Evaluación de Fractura	Dr. Fernando Martínez
+19	Ricardo Gómez	2024-04-15	14:30	Control de Gripe	Dr. Sofía Rodríguez
+20	Ana Morales	2024-04-20	15:30	Seguimiento de Dolor de cabeza	Dr. Javier Ramírez
+21	Luis Pérez	2024-05-01	09:00	Revisión de Fractura	Dr. Juan Pérez
+22	Carmen Díaz	2024-05-05	10:00	Tratamiento de Gripe	Dr. Carmen González
+23	Alejandro Fernández	2024-05-10	11:00	Consulta para Dolor de cabeza	Dr. Ana Rodríguez
+24	Valeria Díaz	2024-05-15	14:00	Chequeo de Fractura	Dr. Luis Fernández
+25	Fernando Gómez	2024-05-20	15:00	Evaluación de Gripe	Dr. Ricardo López
+26	Sofía López	2024-06-01	09:30	Control de Dolor de cabeza	Dr. Valeria Morales
+27	Ricardo Díaz	2024-06-05	10:30	Seguimiento de Fractura	Dr. Manuel Ruiz
+28	Gabriela Pérez	2024-06-10	11:30	Revisión de Gripe	Dr. Sofía Rodríguez
+29	Manuel Rodríguez	2024-06-15	14:30	Tratamiento de Dolor de cabeza	Dr. Alejandro García
+30	Laura Gómez	2024-06-20	15:30	Consulta para Fractura	Dr. Fernando Martínez
+31	María Sánchez	2024-07-01	09:00	Chequeo para Gripe	Dr. Gabriela González
+32	Luis Díaz	2024-07-05	10:00	Evaluación de Dolor de cabeza	Dr. Juan Pérez
+33	Alejandro Pérez	2024-07-10	11:00	Control de Fractura	Dr. Ana Rodríguez
+34	Isabel Morales	2024-07-15	14:00	Seguimiento de Gripe	Dr. Carmen González
+35	Gabriela Rodríguez	2024-07-20	15:00	Revisión de Dolor de cabeza	Dr. Luis Fernández
+36	Fernando Pérez	2024-08-01	09:30	Tratamiento de Fractura	Dr. Ricardo López
+37	Carmen Gómez	2024-08-05	10:30	Consulta para Gripe	Dr. Valeria Morales
+38	Javier Martínez	2024-08-10	11:30	Chequeo de Dolor de cabeza	Dr. Manuel Ruiz
+39	Valeria Fernández	2024-08-15	14:30	Evaluación de Fractura	Dr. Sofía Rodríguez
+40	Ricardo Rodríguez	2024-08-20	15:30	Control de Gripe	Dr. Alejandro García
+41	Ana Sánchez	2024-09-01	09:00	Seguimiento de Dolor de cabeza	Dr. Fernando Martínez
+42	Luis Gómez	2024-09-05	10:00	Revisión de Fractura	Dr. Gabriela González
+43	Cristina Pérez	2024-09-10	11:00	Tratamiento de Gripe	Dr. Juan Pérez
+44	Fernando Morales	2024-09-15	14:00	Consulta para Dolor de cabeza	Dr. Ana Rodríguez
+45	Gabriela Sánchez	2024-09-20	15:00	Chequeo de Fractura	Dr. Carmen González
+46	María Fernández	2024-10-01	09:30	Evaluación de Gripe	Dr. Luis Fernández
+47	Alejandro Gómez	2024-10-05	10:30	Control de Dolor de cabeza	Dr. Ricardo López
+48	Valeria Rodríguez	2024-10-10	11:30	Seguimiento de Fractura	Dr. Valeria Morales
+49	Manuel Pérez	2024-10-15	14:30	Revisión de Gripe	Dr. Manuel Ruiz
+50	Laura Díaz	2024-10-20	15:30	Tratamiento de Dolor de cabeza	Dr. Sofía Rodríguez
+51	Ricardo Sánchez	2024-11-01	09:00	Consulta para Fractura	Dr. Alejandro García
+52	Gabriela Fernández	2024-11-05	10:00	Chequeo de Gripe	Dr. Fernando Martínez
+53	Ana Rodríguez	2024-11-10	11:00	Evaluación de Dolor de cabeza	Dr. Gabriela González
+54	Luis Morales	2024-11-15	14:00	Control de Fractura	Dr. Juan Pérez
+55	Fernando Pérez	2024-11-20	15:00	Seguimiento de Gripe	Dr. Ana Rodríguez
+56	María González	2024-12-01	09:30	Revisión de Dolor de cabeza	Dr. Carmen González
+57	Javier Fernández	2024-12-05	10:30	Tratamiento de Fractura	Dr. Luis Fernández
+58	Valeria Sánchez	2024-12-10	11:30	Consulta para Gripe	Dr. Ricardo López
+59	Cristina Pérez	2024-12-15	14:30	Chequeo de Dolor de cabeza	Dr. Valeria Morales
+60	Luis Pérez	2024-12-20	15:30	Evaluación de Fractura	Dr. Manuel Ruiz
+61	Gabriela Morales	2024-12-21	09:00	Control de Gripe	Dr. Sofía Rodríguez
+62	Fernando González	2024-12-22	10:00	Seguimiento de Dolor de cabeza	Dr. Alejandro García
+63	Ricardo Fernández	2024-12-23	11:00	Revisión de Fractura	Dr. Fernando Martínez
+64	Carmen Sánchez	2024-12-24	14:00	Tratamiento de Gripe	Dr. Gabriela González
+65	Ana Morales	2024-12-25	15:00	Consulta para Dolor de cabeza	Dr. Juan Pérez
+66	Luis Díaz	2024-12-26	09:30	Chequeo de Fractura	Dr. Ana Rodríguez
+67	Alejandro Rodríguez	2024-12-27	10:30	Evaluación de Gripe	Dr. Carmen González
+68	Gabriela Pérez	2024-12-28	11:30	Control de Dolor de cabeza	Dr. Luis Fernández
+69	Valeria Martínez	2024-12-29	14:30	Seguimiento de Fractura	Dr. Ricardo López
+70	Fernando Ruiz	2024-12-30	15:30	Revisión de Gripe	Dr. Valeria Morales
+71	María López	2024-01-01	09:00	Tratamiento de Dolor de cabeza	Dr. Manuel Ruiz
+72	Carlos Gómez	2024-01-02	10:00	Consulta para Fractura	Dr. Sofía Rodríguez
+73	Ana Martínez	2024-01-03	11:00	Chequeo de Gripe	Dr. Alejandro García
+74	Luis Fernández	2024-01-04	14:00	Evaluación de Dolor de cabeza	Dr. Fernando Martínez
+75	Sofía Rodríguez	2024-01-05	15:00	Control de Fractura	Dr. Gabriela González
+76	Ricardo Pérez	2024-01-06	09:30	Seguimiento de Gripe	Dr. Juan Pérez
+77	Gabriela González	2024-01-07	10:30	Revisión de Dolor de cabeza	Dr. Ana Rodríguez
+78	Manuel Rodríguez	2024-01-08	11:30	Tratamiento de Fractura	Dr. Carmen González
+79	Laura Fernández	2024-01-09	14:30	Consulta para Gripe	Dr. Luis Fernández
+80	Ricardo González	2024-01-10	15:30	Chequeo de Dolor de cabeza	Dr. Ricardo López
+81	Fernando Pérez	2024-01-11	09:00	Evaluación de Fractura	Dr. Valeria Morales
+82	Gabriela Torres	2024-01-12	10:00	Control de Gripe	Dr. Manuel Ruiz
+83	Carlos Gómez	2024-01-13	11:00	Seguimiento de Dolor de cabeza	Dr. Sofía Rodríguez
+84	Ana Sánchez	2024-01-14	14:00	Revisión de Fractura	Dr. Alejandro García
+85	Luis Díaz	2024-01-15	15:00	Tratamiento de Gripe	Dr. Fernando Martínez
+86	María Fernández	2024-01-16	09:30	Consulta para Dolor de cabeza	Dr. Gabriela González
+87	Fernando Pérez	2024-01-17	10:30	Chequeo de Fractura	Dr. Juan Pérez
+88	Valeria López	2024-01-18	11:30	Evaluación de Gripe	Dr. Ana Rodríguez
+89	Ricardo Martínez	2024-01-19	14:30	Control de Dolor de cabeza	Dr. Carmen González
+90	Gabriela Fernández	2024-01-20	15:30	Seguimiento de Fractura	Dr. Luis Fernández
+91	Laura González	2024-01-21	09:00	Revisión de Gripe	Dr. Ricardo López
+92	Fernando Sánchez	2024-01-22	10:00	Tratamiento de Dolor de cabeza	Dr. Valeria Morales
+93	Ricardo Gómez	2024-01-23	11:00	Consulta para Fractura	Dr. Manuel Ruiz
+94	Gabriela Sánchez	2024-01-24	14:00	Chequeo de Gripe	Dr. Sofía Rodríguez
+95	Valeria Pérez	2024-01-25	15:00	Evaluación de Dolor de cabeza	Dr. Alejandro García
+96	Luis Fernández	2024-01-26	09:30	Control de Fractura	Dr. Fernando Martínez
+97	Ana Morales	2024-01-27	10:30	Seguimiento de Gripe	Dr. Gabriela González
+98	Carlos Sánchez	2024-01-28	11:30	Revisión de Dolor de cabeza	Dr. Juan Pérez
+99	Laura Pérez	2024-01-29	14:30	Tratamiento de Fractura	Dr. Ana Rodríguez
+100	Ricardo Torres	2024-01-30	15:30	Consulta para Gripe	Dr. Carmen González

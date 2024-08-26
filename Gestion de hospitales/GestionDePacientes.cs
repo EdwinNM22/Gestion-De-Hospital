@@ -11,18 +11,70 @@ using System.Windows.Forms;
 
 namespace Gestion_de_hospitales
 {
-    public partial class BaseDeDatos : Form
+    public partial class GestionDePacientes : Form
     {
-        public BaseDeDatos()
+        public GestionDePacientes()
         {
             InitializeComponent();
-
+           
         }
 
         private void BaseDeDatos_Load(object sender, EventArgs e)
         {
-
+            string filePath = @"C:\Users\Alexx\Documents\Visual Studio 2022\Proyectosxd\Gestion de hospital\Base de datos local\Base_De_Datos_Registro_De_Pacientes.tsv"; // las base de datos estan guardadas dentro de la carpeta del proyecto
+            LoadDataFromTSV(filePath);
         }
+        // Cargar base de datos
+        private void LoadDataFromTSV(string filePath)
+        {
+            try
+            {
+                // Limpiar cualquier dato previo en el DataGridView
+                DataGridViewMain.Rows.Clear();
+
+                using (StreamReader sr = new StreamReader(filePath))
+                {
+                    string line;
+                    bool isFirstLine = true;
+
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        string[] values = line.Split('\t');
+
+                        if (isFirstLine)
+                        {
+                            // Saltear la primera línea que contiene los encabezados
+                            isFirstLine = false;
+                        }
+                        else
+                        {
+                            // Crear una nueva fila
+                            DataGridViewRow row = new DataGridViewRow();
+                            row.CreateCells(DataGridViewMain);
+
+                            // Asignar valores a cada celda según el nombre de la columna en el código
+                            row.Cells[DataGridViewMain.Columns["ColumnID"].Index].Value = values[0];
+                            row.Cells[DataGridViewMain.Columns["ColumnProducto"].Index].Value = values[1];
+                            row.Cells[DataGridViewMain.Columns["ColumnCantidadDeProducto"].Index].Value = values[2];
+                            row.Cells[DataGridViewMain.Columns["ColumnFormasDePago"].Index].Value = values[3];
+                            row.Cells[DataGridViewMain.Columns["ColumnPrecio"].Index].Value = values[4];
+                            row.Cells[DataGridViewMain.Columns["ColumnEmail"].Index].Value = values[5];
+                            row.Cells[DataGridViewMain.Columns["ColumnHistorialmedico"].Index].Value = values[6];
+
+                            // Agregar la fila al DataGridView
+                            DataGridViewMain.Rows.Add(row);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer el archivo TSV: " + ex.Message);
+            }
+        }
+
+        //Fin de la carga de base de datos
+
 
         private void buttonAgregar_Click(object sender, EventArgs e)
         {
@@ -194,38 +246,9 @@ namespace Gestion_de_hospitales
                 MessageBox.Show("La columna 'Id de producto' no se encuentra.");
             }
 
-            //Ordenar de forma Alfabetica
+            
         }
-        private void BotonOrdenAlfabetico_Click(object sender, EventArgs e)
-        {
-            //Si la columna producto existe entonces ordena la columna producto
-
-            if (DataGridViewMain.Columns["ColumnProducto"] != null)
-            {
-
-                DataGridViewMain.Sort(DataGridViewMain.Columns["ColumnProducto"], System.ComponentModel.ListSortDirection.Ascending);
-            }
-            else
-            {
-                MessageBox.Show("La columna 'producto' no existe.");
-            }
-        }
-
-        //Ordenar segun precio
-
-        private void BotonOrdenPorPrecio_Click(object sender, EventArgs e)
-        {
-            // Verifica si la columna "precios" existe en el DataGridView
-            if (DataGridViewMain.Columns["ColumnPrecio"] != null)
-            {
-                // Ordena la columna "precios" de mayor a menor
-                DataGridViewMain.Sort(DataGridViewMain.Columns["ColumnPrecio"], System.ComponentModel.ListSortDirection.Descending);
-            }
-            else
-            {
-                MessageBox.Show("La columna 'precios' no existe.");
-            }
-        }
+       
 
         //Busqueda personalizada
 
@@ -264,41 +287,7 @@ namespace Gestion_de_hospitales
 
         }
 
-        //suma de precios en datagrid
-
-        private void BotonCalcular_Click(object sender, EventArgs e)
-        {
-            double total = 0;
-            foreach (DataGridViewRow row in DataGridViewMain.Rows)
-            {
-                // Verifica que la fila no sea una fila nueva
-                if (!row.IsNewRow)
-                {
-                    // Obtén los valores de las columnas "Cantidad" y "Precio"
-                    var cantidadValue = row.Cells["ColumnCantidadDeProducto"].Value;
-                    var precioValue = row.Cells["ColumnPrecio"].Value;
-
-                    //En caso de querer operar otra columna:
-                    //var IdProductovalue = row.Cells["ColumnID"].Value;
-
-                    // Intenta convertir los valores a double y manejar posibles errores
-                    if (double.TryParse(cantidadValue.ToString(), out double cantidad) &&
-                        double.TryParse(precioValue.ToString(), out double precio))
-
-                    {
-                        total += (cantidad * precio);
-                    }
-                    else
-                    {
-                        return;
-                    }
-
-                }
-            }
-
-            // Muestra el total en el TextBox con formato de número con dos decimales
-            TextBoxTotal.Text = total.ToString("N2");
-        }
+        
 
         private void DataGridViewMain_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

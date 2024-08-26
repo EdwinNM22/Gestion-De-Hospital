@@ -1,0 +1,101 @@
+ID de paciente	Nombre	Fecha de nacimiento	Genero	Telefono	Email	Diagnostico
+1	Juan Pérez	1990-01-01	M	123456789	juan@example.com	Gripe
+2	María López	1985-05-15	F	987654321	maria@example.com	Dolor de cabeza
+3	Carlos Gómez	2000-08-23	M	555123456	carlos@example.com	Fractura
+4	Ana Martínez	1992-02-20	F	555234567	ana@example.com	Gripe
+5	Luis Fernández	1988-03-10	M	555345678	luis@example.com	Dolor de cabeza
+6	Elena Gómez	1995-04-15	F	555456789	elena@example.com	Fractura
+7	Ricardo Morales	1991-05-25	M	555567890	ricardo@example.com	Gripe
+8	Laura Pérez	1990-06-05	F	555678901	laura@example.com	Dolor de cabeza
+9	Jorge Martínez	1987-07-30	M	555789012	jorge@example.com	Fractura
+10	Sofía Díaz	1993-08-12	F	555890123	sofia@example.com	Gripe
+11	Daniel Rodríguez	1996-09-25	M	555901234	daniel@example.com	Dolor de cabeza
+12	Carmen Hernández	1994-10-15	F	555012345	carmen@example.com	Fractura
+13	Pablo Sánchez	1989-11-05	M	555123456	pablo@example.com	Gripe
+14	Isabel Gómez	1992-12-20	F	555234567	isabel@example.com	Dolor de cabeza
+15	Fernando Romero	1986-01-15	M	555345678	fernando@example.com	Fractura
+16	María Gómez	1991-02-25	F	555456789	maria.g@example.com	Gripe
+17	Javier López	1994-03-10	M	555567890	javier@example.com	Dolor de cabeza
+18	Cristina Fernández	1990-04-05	F	555678901	cristina@example.com	Fractura
+19	Alejandro Morales	1988-05-20	M	555789012	alejandro@example.com	Gripe
+20	Valeria Ruiz	1993-06-12	F	555890123	valeria@example.com	Dolor de cabeza
+21	Martín Rodríguez	1989-07-30	M	555901234	martin@example.com	Fractura
+22	Luisa Martínez	1995-08-15	F	555012345	luisa@example.com	Gripe
+23	Luis Gómez	1992-09-25	M	555123456	luis.g@example.com	Dolor de cabeza
+24	Gabriela Fernández	1991-10-05	F	555234567	gabriela@example.com	Fractura
+25	Ricardo Pérez	1987-11-15	M	555345678	ricardo.p@example.com	Gripe
+26	Sofía Morales	1994-12-20	F	555456789	sofia.m@example.com	Dolor de cabeza
+27	Manuel Gómez	1986-01-10	M	555567890	manuel@example.com	Fractura
+28	Ana López	1990-02-05	F	555678901	ana.l@example.com	Gripe
+29	Carlos Sánchez	1989-03-15	M	555789012	carlos.s@example.com	Dolor de cabeza
+30	Laura Rodríguez	1995-04-25	F	555890123	laura.r@example.com	Fractura
+31	Andrés Morales	1992-05-10	M	555901234	andres@example.com	Gripe
+32	Carmen Díaz	1988-06-15	F	555012345	carmen.d@example.com	Dolor de cabeza
+33	Fernando López	1990-07-20	M	555123456	fernando.l@example.com	Fractura
+34	Valeria Sánchez	1993-08-05	F	555234567	valeria.s@example.com	Gripe
+35	Gabriel Martínez	1994-09-10	M	555345678	gabriel@example.com	Dolor de cabeza
+36	María Fernández	1986-10-20	F	555456789	maria.f@example.com	Fractura
+37	Alejandro Gómez	1991-11-05	M	555567890	alejandro.g@example.com	Gripe
+38	Isabel Rodríguez	1992-12-15	F	555678901	isabel.r@example.com	Dolor de cabeza
+39	Luis Fernández	1989-01-30	M	555789012	luis.f@example.com	Fractura
+40	Laura Pérez	1990-02-25	F	555890123	laura.p@example.com	Gripe
+41	Ricardo Morales	1993-03-10	M	555901234	ricardo.m@example.com	Dolor de cabeza
+42	Sofía Díaz	1994-04-05	F	555012345	sofia.d@example.com	Fractura
+43	Manuel Fernández	1992-05-15	M	555123456	manuel.f@example.com	Gripe
+44	Gabriela Gómez	1987-06-25	F	555234567	gabriela.g@example.com	Dolor de cabeza
+45	Carlos Rodríguez	1995-07-30	M	555345678	carlos.r@example.com	Fractura
+46	Ana Morales	1990-08-15	F	555456789	ana.m@example.com	Gripe
+47	Luis Sánchez	1989-09-10	M	555567890	luis.s@example.com	Dolor de cabeza
+48	Cristina Pérez	1993-10-05	F	555678901	cristina.p@example.com	Fractura
+49	Alejandro Fernández	1988-11-20	M	555789012	alejandro.f@example.com	Gripe
+50	Valeria Díaz	1995-12-15	F	555890123	valeria.d@example.com	Dolor de cabeza
+51	Fernando Gómez	1992-01-10	M	555901234	fernando.g@example.com	Fractura
+52	Sofía López	1994-02-20	F	555012345	sofia.l@example.com	Gripe
+53	Ricardo Díaz	1990-03-15	M	555123456	ricardo.d@example.com	Dolor de cabeza
+54	Gabriela Pérez	1988-04-30	F	555234567	gabriela.p@example.com	Fractura
+55	Manuel Rodríguez	1993-05-25	M	555345678	manuel.r@example.com	Gripe
+56	Laura Gómez	1992-06-05	F	555456789	laura.g@example.com	Dolor de cabeza
+57	María Sánchez	1987-07-20	F	555567890	maria.s@example.com	Fractura
+58	Luis Díaz	1995-08-10	M	555678901	luis.d@example.com	Gripe
+59	Alejandro Pérez	1990-09-15	M	555789012	alejandro.p@example.com	Dolor de cabeza
+60	Isabel Morales	1992-10-25	F	555890123	isabel.m@example.com	Fractura
+61	Gabriela Rodríguez	1994-11-05	F	555901234	gabriela.r@example.com	Gripe
+62	Fernando Pérez	1988-12-15	M	555012345	fernando.p@example.com	Dolor de cabeza
+63	Carmen Gómez	1993-01-25	F	555123456	carmen.g@example.com	Fractura
+64	Javier Martínez	1991-02-05	M	555234567	javier.m@example.com	Gripe
+65	Valeria Fernández	1995-03-10	F	555345678	valeria.f@example.com	Dolor de cabeza
+66	Ricardo Rodríguez	1994-04-20	M	555456789	ricardo.r@example.com	Fractura
+67	Ana Sánchez	1990-05-15	F	555567890	ana.s@example.com	Gripe
+68	Luis Gómez	1987-06-10	M	555678901	luis.g@example.com	Dolor de cabeza
+69	Cristina Pérez	1993-07-20	F	555789012	cristina.p@example.com	Fractura
+70	Fernando Morales	1989-08-25	M	555890123	fernando.m@example.com	Gripe
+71	Gabriela Sánchez	1992-09-15	F	555901234	gabriela.s@example.com	Dolor de cabeza
+72	María Fernández	1995-10-30	F	555012345	maria.f@example.com	Fractura
+73	Alejandro Gómez	1988-11-20	M	555123456	alejandro.g@example.com	Gripe
+74	Valeria Rodríguez	1990-12-10	F	555234567	valeria.r@example.com	Dolor de cabeza
+75	Javier Pérez	1993-01-05	M	555345678	javier.p@example.com	Fractura
+76	Cristina Morales	1991-02-25	F	555456789	cristina.m@example.com	Gripe
+77	Manuel Sánchez	1986-03-10	M	555567890	manuel.s@example.com	Dolor de cabeza
+78	Laura Fernández	1994-04-15	F	555678901	laura.f@example.com	Fractura
+79	Fernando Gómez	1989-05-30	M	555789012	fernando.g@example.com	Gripe
+80	Gabriela López	1992-06-20	F	555890123	gabriela.l@example.com	Dolor de cabeza
+81	Ricardo Fernández	1990-07-15	M	555901234	ricardo.f@example.com	Fractura
+82	Ana Rodríguez	1995-08-05	F	555012345	ana.r@example.com	Gripe
+83	Luis Morales	1993-09-10	M	555123456	luis.m@example.com	Dolor de cabeza
+84	Carmen Pérez	1988-10-15	F	555234567	carmen.p@example.com	Fractura
+85	Alejandro Díaz	1994-11-20	M	555345678	alejandro.d@example.com	Gripe
+86	Sofía Gómez	1989-12-10	F	555456789	sofia.g@example.com	Dolor de cabeza
+87	Fernando Pérez	1992-01-15	M	555567890	fernando.p@example.com	Fractura
+88	Gabriela Sánchez	1995-02-20	F	555678901	gabriela.s@example.com	Gripe
+89	Ricardo Martínez	1991-03-10	M	555789012	ricardo.m@example.com	Dolor de cabeza
+90	Ana Fernández	1987-04-25	F	555890123	ana.f@example.com	Fractura
+91	Luis Pérez	1993-05-15	M	555901234	luis.p@example.com	Gripe
+92	María Rodríguez	1990-06-30	F	555012345	maria.r@example.com	Dolor de cabeza
+93	Fernando Gómez	1989-07-20	M	555123456	fernando.g@example.com	Fractura
+94	Gabriela Fernández	1992-08-10	F	555234567	gabriela.f@example.com	Gripe
+95	Ricardo Sánchez	1993-09-15	M	555345678	ricardo.s@example.com	Dolor de cabeza
+96	Laura Martínez	1991-10-05	F	555456789	laura.m@example.com	Fractura
+97	Alejandro Gómez	1987-11-20	M	555567890	alejandro.g@example.com	Gripe
+98	Sofía Fernández	1995-12-15	F	555678901	sofia.f@example.com	Dolor de cabeza
+99	Manuel Pérez	1992-01-10	M	555789012	manuel.p@example.com	Fractura
+100	Carmen Díaz	1993-02-05	F	555890123	carmen.d@example.com	Gripe

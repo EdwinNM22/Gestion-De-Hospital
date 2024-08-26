@@ -28,31 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
+            webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // webView21
             // 
-            panel1.BackColor = Color.FromArgb(24, 25, 26);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1157, 592);
-            panel1.TabIndex = 0;
+            webView21.AllowExternalDrop = true;
+            webView21.CreationProperties = null;
+            webView21.DefaultBackgroundColor = Color.White;
+            webView21.Dock = DockStyle.Fill;
+            webView21.Location = new Point(0, 0);
+            webView21.Name = "webView21";
+            webView21.Size = new Size(1157, 592);
+            webView21.TabIndex = 0;
+            webView21.ZoomFactor = 1D;
             // 
             // Asistencia
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1157, 592);
-            Controls.Add(panel1);
+            Controls.Add(webView21);
             Name = "Asistencia";
             Text = "Asistencia";
+            Load += Asistencia_Load;
+            ((System.ComponentModel.ISupportInitialize)webView21).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
     }
 }

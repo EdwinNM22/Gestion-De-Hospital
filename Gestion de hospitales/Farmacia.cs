@@ -8,19 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Gestion_de_hospitales
+namespace Prueba_De_DataGridView
 {
-    public partial class CitasMedicas : Form
+    public partial class Farmacia : Form
     {
-        public CitasMedicas()
+        public Farmacia()
         {
             InitializeComponent();
-
         }
 
-        private void Contactos_Load(object sender, EventArgs e)
+        private void Farmacia_Load(object sender, EventArgs e)
         {
-            string filePath = @"C:\Users\Alexx\Documents\Visual Studio 2022\Proyectosxd\Gestion de hospital\Base de datos local\Base_De_Datos_Citas_Medicas.tsv"; // las base de datos estan guardadas dentro de la carpeta del proyecto
+            string filePath = @"C:\Users\Alexx\Documents\Visual Studio 2022\Proyectosxd\Gestion de hospital\Base de datos local\Base_De_Datos_Farmacia.tsv"; // las base de datos estan guardadas dentro de la carpeta del proyecto
             LoadDataFromTSV(filePath);
         }
 
@@ -30,7 +29,7 @@ namespace Gestion_de_hospitales
             try
             {
                 // Limpiar cualquier dato previo en el DataGridView
-                dataGridView1.Rows.Clear();
+                DataGridFarmacia.Rows.Clear();
 
                 using (StreamReader sr = new StreamReader(filePath))
                 {
@@ -50,19 +49,17 @@ namespace Gestion_de_hospitales
                         {
                             // Crear una nueva fila
                             DataGridViewRow row = new DataGridViewRow();
-                            row.CreateCells(dataGridView1);
+                            row.CreateCells(DataGridFarmacia);
 
                             // Asignar valores a cada celda según el nombre de la columna en el código
-                            row.Cells[dataGridView1.Columns["ColumnIDCita"].Index].Value = values[0];
-                            row.Cells[dataGridView1.Columns["ColumnNombredepaciente"].Index].Value = values[1];
-                            row.Cells[dataGridView1.Columns["ColumnFechacita"].Index].Value = values[2];
-                            row.Cells[dataGridView1.Columns["ColumnHoracita"].Index].Value = values[3];
-                            row.Cells[dataGridView1.Columns["ColumnMotivocita"].Index].Value = values[4];
-                            row.Cells[dataGridView1.Columns["ColumnDoctorcita"].Index].Value = values[5];
-                            
+                            row.Cells[DataGridFarmacia.Columns["ColumnIDMedicamento"].Index].Value = values[0];
+                            row.Cells[DataGridFarmacia.Columns["ColumnMedicamento"].Index].Value = values[1];
+                            row.Cells[DataGridFarmacia.Columns["ColumnStock"].Index].Value = values[2];
+                            row.Cells[DataGridFarmacia.Columns["ColumnFechaDeIngreso"].Index].Value = values[3];
+
 
                             // Agregar la fila al DataGridView
-                            dataGridView1.Rows.Add(row);
+                            DataGridFarmacia.Rows.Add(row);
                         }
                     }
                 }
@@ -78,10 +75,10 @@ namespace Gestion_de_hospitales
 
 
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        //Ignorar esto xd
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
     }
 }
-
